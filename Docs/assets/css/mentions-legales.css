@@ -1,3 +1,33 @@
+body {
+    background-color: black;
+    font-family : verdana;
+}
+
+
 h1 {
-    color: blue;
+    color: Cadetblue;
+    font-weight:bold;
+}
+
+h2 {
+    color:lightgreen;
+    text-decoration: underline;
+}
+
+h3 {
+    color: darkgrey;
+}
+
+h4 { 
+    color : orange;
+    font-weight: bold
+}
+
+p {
+    color: darkgrey;
+    letter-spacing: 1px;
+}
+
+#NomEntreprise {
+    font-weight:900px;
 }
