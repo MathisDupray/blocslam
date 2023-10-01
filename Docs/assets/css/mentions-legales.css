@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-family : verdana;
+    font-family : 'Trebuchet MS', sans-serif;
 }
 
 
@@ -18,12 +18,12 @@ h3 {
     color: darkgrey;
 }
 
-h4 { 
-    color : #784842;
-    font-weight: bold
-}
-
 p {
     color: darkgrey;
     letter-spacing: 1px;
+}
+
+.PubMesure {
+    color: #784842;
+    font-weight: bold;
 }
