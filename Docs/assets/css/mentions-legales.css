@@ -27,3 +27,8 @@ p {
     color: #784842;
     font-weight: bold;
 }
+
+ul {
+    color: darkgrey;
+    letter-spacing: 1px;
+}
