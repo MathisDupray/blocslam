@@ -5,12 +5,12 @@ body {
 
 
 h1 {
-    color: Cadetblue;
+    color: #a3bfa6;
     font-weight:bold;
 }
 
 h2 {
-    color:lightgreen;
+    color:#7ed690;
     text-decoration: underline;
 }
 
@@ -19,15 +19,11 @@ h3 {
 }
 
 h4 { 
-    color : orange;
+    color : #784842;
     font-weight: bold
 }
 
 p {
     color: darkgrey;
     letter-spacing: 1px;
-}
-
-#NomEntreprise {
-    font-weight:900px;
 }
