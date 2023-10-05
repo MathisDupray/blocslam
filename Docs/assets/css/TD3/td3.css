@@ -1,0 +1,19 @@
+body {
+    background-image: url("./../../images/TD3/df-min.jpg");
+    font-family : 'Trebuchet MS', sans-serif;
+}
+
+.Bigbox {
+    background-color: orangered;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+.Grostitre {
+    font-size:50px;
+}
