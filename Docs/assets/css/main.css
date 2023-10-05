@@ -1,3 +1,9 @@
-h1 {
-	color: blue;
+body {
+    background-color: black;
+    color: white;
+    font-family : 'Trebuchet MS', sans-serif;
+}
+
+.liste {
+	left-margin:30px;
 }
