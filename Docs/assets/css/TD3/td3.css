@@ -17,3 +17,22 @@ body {
 .Grostitre {
     font-size:50px;
 }
+
+.Smallboxes {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: justify;
+    height:600px; /* modifier taille div contenant les boites pour ajuster le flexbox */
+}
+
+.Box {
+    margin:5px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    align-items:flex-end;
+}
