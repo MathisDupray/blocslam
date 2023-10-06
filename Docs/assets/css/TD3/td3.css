@@ -36,3 +36,10 @@ body {
     padding-top: 20px;
     align-items:flex-end;
 }
+
+footer {
+    background-color: darkslategrey;
+    color:white;
+    height:60px;
+    text-align: center;
+}
