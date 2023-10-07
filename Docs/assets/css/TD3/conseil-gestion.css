@@ -4,13 +4,14 @@ body {
 }
 
 .Bigbox {
-    background-color: orangered;
+    background-color: rgb(175, 89, 57);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
+    box-shadow: 0.7em 0.7em 1.2em rgb(68, 70, 70);
     
 }
 
@@ -20,21 +21,25 @@ body {
 
 .Smallboxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: justify;
-    height:600px; /* modifier taille div contenant les boites pour ajuster le flexbox */
+    height:45em; /* modifier taille div contenant les boites pour ajuster le flexbox */
 }
 
 .Box {
+    display:flex;
+    flex-direction: column;
     margin:5px;
     justify-content: center;
     background-color: white;
     border-radius: 15px;
     padding-bottom: 20px;
     padding-top: 20px;
-    align-items:flex-end;
+    box-shadow: 0.7em 0.7em 1.2em rgb(68, 70, 70);
+    margin-bottom: 6em;
+    min-height: 15em;
 }
 
 footer {
@@ -42,4 +47,17 @@ footer {
     color:white;
     height:60px;
     text-align: center;
+}
+
+.img {
+    padding:1em;
+}
+
+h3 {
+    margin-left: 1em;
+}
+
+p {
+    margin-left: 1em;
+    margin-right: 1em;
 }
