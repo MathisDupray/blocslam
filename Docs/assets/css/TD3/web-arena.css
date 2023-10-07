@@ -1,0 +1,32 @@
+.header {
+    display:flex;
+    background-image: url("./../../images/TD3/header.jpg");
+}
+
+.header > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.button-style {
+    border-radius: 10%;
+}
+
+.button-style:hover {
+    background-color: rgb(196, 194, 194);
+}
+
+h2 {
+    font-size: 2em;
+}
+
+hr {
+    width:7%;
+    color:rgb(107, 114, 221);
+}
+
+.main {
+    flex-direction: column;
+    display:flex;
+    text-align: center;
+}
