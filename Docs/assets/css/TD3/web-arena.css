@@ -1,11 +1,60 @@
+/* ----------------------- HEADER / NAVBAR ------------------------- */
 .header {
-    display:flex;
     background-image: url("./../../images/TD3/header.jpg");
+    justify-content: space-around;
+    display:flex;
+    /*flex-direction: row;*/
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat center;
+    background-size: cover;
 }
 
-.header > ul{
-    display: flex;
+ul {
+
+    display:flex;
     list-style-type: none;
+    color:white;
+}
+
+li {
+    padding:10px;
+    margin:10 px;
+}
+
+li a {
+    display:flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    max-width: 30px; /* La largeur maximale de l'image est définie à 100% du conteneur parent */
+    height: 30px;    /* La hauteur est automatiquement ajustée pour maintenir les proportions de l'image */
+}
+
+.header .Logo {
+    max-height: 3.5em;
+    transition: .2s;
+}
+
+li:hover {
+    border-top: solid 3px white;
+}
+
+/*------------------------- MAIN TEXT --------------------------------- */
+.main {
+    flex-direction: column;
+    display:flex;
+    text-align: center;
+}
+
+hr {
+    width:7%;
+    color:rgb(107, 114, 221);
+}
+
+h2 {
+    font-size: 2em;
 }
 
 .button-style {
@@ -14,19 +63,4 @@
 
 .button-style:hover {
     background-color: rgb(196, 194, 194);
-}
-
-h2 {
-    font-size: 2em;
-}
-
-hr {
-    width:7%;
-    color:rgb(107, 114, 221);
-}
-
-.main {
-    flex-direction: column;
-    display:flex;
-    text-align: center;
 }
