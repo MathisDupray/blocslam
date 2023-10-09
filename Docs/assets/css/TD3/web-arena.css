@@ -190,3 +190,23 @@ footer {
     color:white;
     flex-wrap:wrap;
 }
+
+.Article {
+    display:flex;
+    flex-direction: column;
+}
+
+.blog8 {
+    max-width:80%;
+    max-height:40em;
+}
+
+#blog5 {
+    max-width:80%;
+    max-height:40em;
+}
+
+.RightDiv image {
+    max-width: 10%;
+}
+
