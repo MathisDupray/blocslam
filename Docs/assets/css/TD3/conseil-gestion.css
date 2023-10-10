@@ -12,6 +12,7 @@ body {
     margin-left: 25%;
     margin-right: 25%;
     box-shadow: 0.7em 0.7em 1.2em rgb(68, 70, 70);
+    margin-bottom:25em;
     
 }
 
@@ -20,26 +21,21 @@ body {
 }
 
 .Smallboxes {
-    display: flex;
+    display:flex;
     justify-content: space-around;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: justify;
-    height:45em; /* modifier taille div contenant les boites pour ajuster le flexbox */
+    gap:3%;
+    color:black;
+    z-index:1
 }
 
 .Box {
     display:flex;
     flex-direction: column;
-    margin:5px;
-    justify-content: center;
+    align-items: start;
+    max-width: 18%;
+    border-radius: 15%;
     background-color: white;
-    border-radius: 15px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    box-shadow: 0.7em 0.7em 1.2em rgb(68, 70, 70);
-    margin-bottom: 6em;
-    min-height: 15em;
+    padding:1em;
 }
 
 footer {
@@ -61,3 +57,13 @@ p {
     margin-left: 1em;
     margin-right: 1em;
 }
+
+#moncercle{
+    background:#e68f0d;
+    border-radius:50%;
+    width:3em;
+    height:3em;
+    border:2px solid #679403;
+    position:absolute;
+    z-index:2;
+  }
