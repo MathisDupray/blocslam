@@ -3,7 +3,7 @@ body {
     margin:0;
 }
 
-/* ----------------------- HEADER / NAVBAR ------------------------- Pas réussis à mettre la bordure de li:hover en haut de header + Hover les éléments aggranndit ma div header */
+/* ----------------------- HEADER / NAVBAR ------------------------- */
 
 .header {
     background-image: url("./../../images/TD3/header.jpg");
@@ -65,13 +65,13 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 10; /* pr etre sur que c'est apparant */
 }
 
 /*------------------------- MAIN TEXT --------------------------------- */
 .main {
-    flex-direction: column;
     display:flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -91,10 +91,10 @@ h2 {
     font-size: 2em;
 }
 
-.button-style {
+.button-style { /* style de bouton réutilisé dans blog.html /!\ */
     background-color: rgb(192, 205, 224);
     border-radius: 5%;
-    border-style: ridge;
+    border-style:solid;
     text-align: center;
     height: 2.8em;
     width:10em;
@@ -131,81 +131,90 @@ footer {
 
 .container {
     display:flex;
-    justify-content:space-between;
-    background-color: lightblue;
+    justify-content:center;
+    background-color: white;
 }
+
+/* Div categories */
 
 .licat {
     list-style-type: none;
+    padding:0em; /* forcer le apdding a 0, a 8 sur Opera (?) */
+    margin-right:5em;
 }
 
-.container hr {
+.licat li {
+    margin-bottom: 0.5em;
+}
+
+.Categories hr {
     width:35%;
+    margin-left:0;
 }
 
 .Categories {
     display:flex;
     flex-direction: column;
-    background-color: lightpink;
-    text-align: center;
+    background-color: white;
+    text-align: left;
 }
 
-.Categories h2 {
-    text-align: center;
+.Categories a { /* Force un style a li */
+    text-decoration: none;
+    color:white;
 }
 
-.licat {
-    text-align: justify;
+.checkmarks {
+    margin-right: 0.7em;
 }
+/* Div Blog */
+
+.BLOG hr {
+    width:35%;
+    margin-left:0;
+    margin-bottom: 1em;
+}
+
 .BLOG {
     display:flex;
     flex-direction: column;
     justify-content: left;
     min-width: 15%;
-    max-width: 33%;
-    background-color: lightgreen;
+    max-width: 40%;
+    background-color: white;
 }
 
-.RightDiv {
-    min-width: 33%;
-    background-color: lightgray;
-    justify-content: left;
+.BLOG .Article .button-style.readmore {
+    padding: 0.3em;
+    margin-bottom:1em;
 }
 
-#blog6 {
-    max-width:80%;
-    max-height:40em;
-}
-
-.container hr {
-    width:20%;
-    background-color:#39718c;
-    height:3px;
-    border:none;
-    display:flex;
-    justify-content: left;    
-}
-
-.paddingleft {
-    min-width: 6%;
+.button-style.readmore a{
+    text-decoration: none;
+    color:white;
 }
 
 .TAGS ul {
     display:flex;
     flex-direction: row;
     justify-content: left;
+    padding:0;
+}
+
+.TAGS a {
+    color:white;
+    text-decoration: none;
 }
 
 .TAGS li {
     list-style-type: none;
-    background-color: red;
+    background-color: rgb(40, 97, 134);
     margin:0.5em;
     max-width: max-content;
     max-height: 2em;
     white-space: nowrap;
     padding:0.3em;
-    border-radius: 15%;
-    text-transform: uppercase;
+    border-radius: 10%;
     color:white;
     flex-wrap:wrap;
 }
@@ -213,19 +222,84 @@ footer {
 .Article {
     display:flex;
     flex-direction: column;
+    text-align:justify;
 }
 
-.blog8 {
-    max-width:80%;
+/* Div Right */
+
+.RightDiv hr {
+    margin-left:0;
+    width:35%;
+    margin-bottom:1em;
+}
+
+.RightDiv {
+    max-width:15%;
+    margin-left: 4em;
+}
+
+.Recent {
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: left;
+}
+
+.who{
+    margin-top:-0.5em;
+    margin-bottom:0.5em;
+}
+
+.when {
+    margin-top:-0.5em;
+}
+
+.RightDiv .TAGS ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow the tags to wrap within the container */
+    justify-content: flex-start; /* Align tags at the start of the container */
+    padding: 0;
+    max-width: 100%; /* Set the maximum width to the width of the container */
+}
+
+.RightDiv .TAGS li {
+    list-style-type: none;
+    background-color: rgb(40, 97, 134);
+    margin: 0.5em;
+    white-space: nowrap;
+    padding: 0.3em;
+    border-radius: 10%;
+    color: white;
+}
+
+.RightDiv .TAGS a {
+    color: white;
+    text-decoration: none;
+}
+/* -----------------------------Dimensions images---------------------------- */
+.BLOG .blog8 {
+    min-width:80%;
     max-height:40em;
+}
+
+.Recent .blog8 {
+    max-width: 100%; /* Set the maximum width to 100% of the container */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 150px; /* Set the maximum height as needed */
 }
 
 #blog5 {
-    max-width:80%;
+    min-width:100%;
     max-height:40em;
 }
 
-.RightDiv image {
-    max-width: 10%;
+.blog7 {
+    max-width: 100%; /* Set the maximum width to 100% of the container */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 150px; /* Set the maximum height as needed */
 }
 
+#blog6 {
+    min-width: 100%;
+    max-height:40em;
+}
