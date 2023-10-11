@@ -256,10 +256,10 @@ footer {
 
 .RightDiv .TAGS ul {
     display: flex;
-    flex-wrap: wrap; /* Allow the tags to wrap within the container */
-    justify-content: flex-start; /* Align tags at the start of the container */
+    flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 0;
-    max-width: 100%; /* Set the maximum width to the width of the container */
+    max-width: 100%;
 }
 
 .RightDiv .TAGS li {
@@ -270,6 +270,7 @@ footer {
     padding: 0.3em;
     border-radius: 10%;
     color: white;
+    text-transform: uppercase;
 }
 
 .RightDiv .TAGS a {
@@ -283,9 +284,9 @@ footer {
 }
 
 .Recent .blog8 {
-    max-width: 100%; /* Set the maximum width to 100% of the container */
-    height: auto; /* Maintain the aspect ratio */
-    max-height: 150px; /* Set the maximum height as needed */
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
 }
 
 #blog5 {
@@ -294,9 +295,9 @@ footer {
 }
 
 .blog7 {
-    max-width: 100%; /* Set the maximum width to 100% of the container */
-    height: auto; /* Maintain the aspect ratio */
-    max-height: 150px; /* Set the maximum height as needed */
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
 }
 
 #blog6 {
