@@ -7,7 +7,8 @@ body {
 
 .header {
     background-image: url("./../../images/TD3/header.jpg");
-    background-position-y:-200px; /* Refocus de l'img-background vers le milieu */
+    background-position-y:-250px; /* Refocus de l'img-background vers le milieu */
+    background-position-x:50%;
     justify-content: space-between; /* space around aurait pu être bien, mais navbar trop à gauche */
     display:flex;
     /*flex-direction: row;*/
@@ -29,6 +30,7 @@ body {
     color:white;
     margin-right: 3em;
     margin:0;
+    height:100%;
 }
 
 .header li a {
@@ -100,7 +102,7 @@ h2 {
 }
 
 .button-style:hover {
-    background-color: rgb(196, 194, 194);
+    background-color: rgb(100, 98, 223);
 }
 
 /* -------------------- Partners -------------------------*/
