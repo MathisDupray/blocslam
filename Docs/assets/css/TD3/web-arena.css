@@ -1,8 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin:0;
 }
 
 /* ----------------------- HEADER / NAVBAR ------------------------- Pas réussis à mettre la bordure de li:hover en haut de header + Hover les éléments aggranndit ma div header */
+
 .header {
     background-image: url("./../../images/TD3/header.jpg");
     background-position-y:-200px; /* Refocus de l'img-background vers le milieu */
@@ -10,21 +12,23 @@ body {
     display:flex;
     /*flex-direction: row;*/
     align-items: center;
-    flex-wrap: wrap;
-    background-repeat: no-repeat center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position:relative;
+    height: 10vh;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Aurait pu utilisé media queries, qui aurait été tout aussi simple 
+    pour garder la height de header.bg */
 }
 
 .header ul {
-    display:flex;
     list-style-type: none;
+    display:flex;
+    align-items: start;
     color:white;
     margin-right: 3em;
-
-}
-
-.header li {
-    margin-top: 15px;
+    margin:0;
 }
 
 .header li a {
@@ -34,9 +38,15 @@ body {
     text-align: center;
     text-decoration: none;
     max-width: 1em;
-    height: 1em;
+    height: 100%;
     margin:2em;
     white-space: nowrap; /* Interdit les elements de revenir a la ligne dans la navbar, pour le About Us en particulier ici */
+}
+
+.header li {
+    position:relative;
+    margin: 0 1em;
+    height: 100%;
 }
 
 .header .Logo {
@@ -44,9 +54,16 @@ body {
     margin-left: 10em;
 }
 
-.header li:hover {
-    border-top: solid 3px white;
-    transition: .1s;
+.header li:hover::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 /*------------------------- MAIN TEXT --------------------------------- */
