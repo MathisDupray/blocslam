@@ -1,0 +1,306 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+}
+
+/* ----------------------- HEADER / NAVBAR ------------------------- */
+
+.header {
+    background-image: url("./../../images/TD3/header.jpg");
+    background-position-y:-250px; /* Refocus de l'img-background vers le milieu */
+    background-position-x:50%;
+    justify-content: space-between; /* space around aurait pu être bien, mais navbar trop à gauche */
+    display:flex;
+    /*flex-direction: row;*/
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    height: 10vh;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Aurait pu utilisé media queries, qui aurait été tout aussi simple 
+    pour garder la height de header.bg */
+}
+
+.header ul {
+    list-style-type: none;
+    display:flex;
+    align-items: start;
+    color:white;
+    margin-right: 3em;
+    margin:0;
+    height:100%;
+}
+
+.header li a {
+    display:flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    max-width: 1em;
+    height: 100%;
+    margin:2em;
+    white-space: nowrap; /* Interdit les elements de revenir a la ligne dans la navbar, pour le About Us en particulier ici */
+}
+
+.header li {
+    position:relative;
+    margin: 0 1em;
+    height: 100%;
+}
+
+.header .Logo {
+    max-height: 3.5em;
+    margin-left: 10em;
+}
+
+.header li:hover::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; /* pr etre sur que c'est apparant */
+}
+
+/*------------------------- MAIN TEXT --------------------------------- */
+.main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text > p{
+    text-align: justify;
+    justify-content: center;
+}
+
+main hr {
+    width:10%;
+    background-color:#39718c;
+    height:3px;
+    border:none;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.button-style { /* style de bouton réutilisé dans blog.html /!\ */
+    background-color: rgb(192, 205, 224);
+    border-radius: 5%;
+    border-style:solid;
+    text-align: center;
+    height: 2.8em;
+    width:10em;
+    border-color:rgb(224, 213, 213)
+}
+
+.button-style:hover {
+    background-color: rgb(100, 98, 223);
+}
+
+/* -------------------- Partners -------------------------*/
+
+.partners {
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    flex-wrap:wrap;
+}
+
+/* --------- Footer  ----------------------- */
+
+footer {
+    background: rgb(45,68,131);
+    background: linear-gradient(90deg, rgba(45,68,131,1) 0%, rgba(8,154,255,1) 35%, rgba(43,100,189,1) 100%); /* cssgradient.io */
+    width:100%;
+    height:5em;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ********** PAGE BLOG *********** */
+
+.container {
+    display:flex;
+    justify-content:center;
+    background-color: white;
+}
+
+/* Div categories */
+
+.licat {
+    list-style-type: none;
+    padding:0em; /* forcer le apdding a 0, a 8 sur Opera (?) */
+    margin-right:5em;
+}
+
+.licat li {
+    margin-bottom: 0.5em;
+}
+
+.Categories hr {
+    width:35%;
+    margin-left:0;
+}
+
+.Categories {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: left;
+}
+
+.Categories a { /* Force un style a li */
+    text-decoration: none;
+    color:white;
+}
+
+.checkmarks {
+    margin-right: 0.7em;
+}
+/* Div Blog */
+
+.BLOG hr {
+    width:35%;
+    margin-left:0;
+    margin-bottom: 1em;
+}
+
+.BLOG {
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    min-width: 15%;
+    max-width: 40%;
+    background-color: white;
+}
+
+.BLOG .Article .button-style.readmore {
+    padding: 0.3em;
+    margin-bottom:1em;
+}
+
+.button-style.readmore a{
+    text-decoration: none;
+    color:white;
+}
+
+.TAGS ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    padding:0;
+}
+
+.TAGS a {
+    color:white;
+    text-decoration: none;
+}
+
+.TAGS li {
+    list-style-type: none;
+    background-color: rgb(40, 97, 134);
+    margin:0.5em;
+    max-width: max-content;
+    max-height: 2em;
+    white-space: nowrap;
+    padding:0.3em;
+    border-radius: 10%;
+    color:white;
+    flex-wrap:wrap;
+}
+
+.Article {
+    display:flex;
+    flex-direction: column;
+    text-align:justify;
+}
+
+/* Div Right */
+
+.RightDiv hr {
+    margin-left:0;
+    width:35%;
+    margin-bottom:1em;
+}
+
+.RightDiv {
+    max-width:15%;
+    margin-left: 4em;
+}
+
+.Recent {
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: left;
+}
+
+.who{
+    margin-top:-0.5em;
+    margin-bottom:0.5em;
+}
+
+.when {
+    margin-top:-0.5em;
+}
+
+.RightDiv .TAGS ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    max-width: 100%;
+}
+
+.RightDiv .TAGS li {
+    list-style-type: none;
+    background-color: rgb(40, 97, 134);
+    margin: 0.5em;
+    white-space: nowrap;
+    padding: 0.3em;
+    border-radius: 10%;
+    color: white;
+    text-transform: uppercase;
+}
+
+.RightDiv .TAGS a {
+    color: white;
+    text-decoration: none;
+}
+/* -----------------------------Dimensions images---------------------------- */
+.BLOG .blog8 {
+    min-width:80%;
+    max-height:40em;
+}
+
+.Recent .blog8 {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+#blog5 {
+    min-width:100%;
+    max-height:40em;
+}
+
+.blog7 {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+#blog6 {
+    min-width: 100%;
+    max-height:40em;
+}
