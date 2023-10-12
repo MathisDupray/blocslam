@@ -14,5 +14,6 @@ body {
 }
 
 .liste li {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
+  left-margin:30px;
 }
