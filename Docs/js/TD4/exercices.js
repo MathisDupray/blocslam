@@ -61,4 +61,75 @@ function display_image() {
     document.getElementById("image_here").appendChild(image_to_display);
 }
 
-/*  */
+/* AlertBox on mouse-over */
+
+function alert_mouse_over() {
+    alert("Vous survolez l'élement en question")
+}
+
+/* Horloge numérique */
+
+function update_horloge() {
+    var heureactuelle = new Date();
+    var heures = heureactuelle.getHours();
+    var minutes = heureactuelle.getMinutes();
+    var secondes = heureactuelle.getSeconds();
+    heures = (heures < 10 ? "0" + heures : heures);
+    minutes = (minutes < 10 ? "0" + minutes : minutes);
+    secondes = (secondes < 10 ? "0" + secondes : secondes);
+    var clockElement = document.getElementById("horloge");
+    clockElement.textContent = heures + ":" + minutes + ":" + secondes;
+}
+
+update_horloge(); /* appel fonction pour afficher un 1er display */
+setInterval(update_horloge, 1000); /* refresh tte les 1s */
+
+/*  delte conf */
+
+function delete_element() {
+    var selected_div_id = document.getElementById("div_select").value;
+    var selected_div = document.getElementById(selected_div_id);
+    selected_div.remove();
+}
+
+function delete_element_reset () {
+    location.reload();
+}
+
+/* Ajoutée cette fonction qui permet de lister les elements de la page sans avoir a les nommer dans le HTML */
+/* J'ai essayé avec window.onload = GetDivIDs mais les options du select étaient vides, besoin d'un bouton */
+function getDivIDs() {
+    var divElements = document.getElementsByTagName("div");
+    var selectElement = document.getElementById("div_select");
+    selectElement.innerHTML = "";
+    for (var i = 0; i < divElements.length; i++) {
+        var option = document.createElement("option");
+        option.value = divElements[i].id;
+        option.textContent = divElements[i].id;
+        selectElement.appendChild(option);
+    }
+}
+
+/* Toggle check */
+
+function toggleCheckbox() {
+    var checkbox = document.getElementById("toggleCheckbox");
+    var div = document.getElementById("myDiv");
+    if (checkbox.checked) {
+        div.style.display = "block";
+    } else {
+        div.style.display = "none";
+    }
+}
+
+/* Form contact */
+
+function send_to_logs_submit() {
+    var name = document.getElementById("nameInput");
+    var email = document.getElementById("emailInput");
+    var msg = document.getElementById("messageInput");
+
+       console.log("Name: " + name);
+    console.log("Email: " + email);
+    console.log("Message: " + message);
+}
