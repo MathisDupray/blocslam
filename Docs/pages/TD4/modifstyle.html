@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style src="./../../assets/css/TD4/exercices.css"></style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="input">
+        <h1>Exemple d'interface pour changer les attributs de style du texte</h1>
+        <p>Cliquez sur les cases à cocher et utilisez les atures éléments ci-dessous pour changer les attributs de style du texte affiché dans la zone : </p>
+            <input type="checkbox" id="bold_check" name="Gras"/>
+                <label for="bold">Gras</label>
+            <input type="checkbox" id="italic_check" name="Italique" checked/>
+                <label for="italic_check">Italic</label>
+            <input type="checkbox" id="under_check" name="Souligné" checked/>
+                <label for="under_check">Souligné</label>
+            <input type="checkbox" id="barred_check" name="Barré" checked/>
+                <label for="barred_check">Barré</label>
+            <input type="color" id="color_select" name="color">
+            <input type="number" id="number_select" name="font-size">
+            <select name="font" id="font_select">
+                <option value="Cursive">Cursive</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Monospace">Monospace</option>
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Serif">Serif</option>
+            </select>
+            <button type="submit" id="plus_size_font">Augmenter taille</button>
+            <button type="submit" id="minus_size_font">Diminuer taille</button>                    
+      </div>
+      <div id="exemple" style="border:2px solid black;">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, dignissimos sunt! Hic ut aperiam eum voluptatum veniam consequuntur dolorem quas culpa</p>
+      </div>
+    </div>
+</body>
+<script src="./../../js/TD4/modifstyle.js"></script>
+</html>
