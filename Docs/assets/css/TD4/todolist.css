@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+  
+h1 {
+    text-align: center;
+    color: #333;
+}
+  
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+  
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+  
+button[type="submit"],
+button[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+  
+li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+  
+.task_name {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+  
+.done_checkbox {
+    margin-right: 10px;
+}
+  
+.delete_button {
+    margin-left: auto;
+}
+  
+#delete_done_button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
