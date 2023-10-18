@@ -18,7 +18,7 @@ if (localStorage.getItem('tasks')) {
   });
 }
 
-// Handle form submission
+// form submission
 form.addEventListener('submit', event => {
   event.preventDefault();
   const taskName = input.value.trim();
@@ -46,7 +46,8 @@ function addTaskToList(task) {
   taskName.textContent = task.name;
   taskName.className = 'task-name';
   const deleteButton = document.createElement('button');
-  deleteButton.textContent = 'Delete';
+  deleteButton.innerHTML = '<i class="fa-solid fa-trash" style="color: #ffffff;"></i>';
+  deleteButton.className = 'delete_button';
   deleteButton.addEventListener('click', () => {
     const index = tasks.indexOf(task);
     if (index !== -1) {
@@ -61,7 +62,7 @@ function addTaskToList(task) {
   list.appendChild(li);
 }
 
-// Delete done tasks
+// Delete_done_tasks
 deleteDoneButton.addEventListener('click', () => {
   tasks = tasks.filter(task => !task.done);
   list.innerHTML = '';
@@ -116,7 +117,7 @@ function populateSavedListsDropdown() {
   });
 }
 
-// Call function to populate saved lists dropdown initially
+// appel de la fonction pour que les listes soient peuplées des le chargement
 populateSavedListsDropdown();
 
 // Save tasks to local storage

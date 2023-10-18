@@ -1,75 +1,49 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-  
 h1 {
-    text-align: center;
-    color: #333;
-}
-  
-form {
-    display: flex;
-    margin-bottom: 20px;
-}
-  
-input[type="text"] {
-    flex-grow: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px 0 0 5px;
-}
-  
-button[type="submit"],
-button[type="button"] {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
+    text-align:center;
 }
 
-ul {
+#todo_input, #save_input, #saved_lists {
+    padding:1em;
+}
+
+#add_button {
+    padding : 1em;
+    background-color: rgb(43, 177, 43);
+    color:white;
+}
+
+form {
+    border-bottom: lightgray 1px solid;
+    padding:1em;
+}
+
+ul li {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
-  
-li {
-    display: flex;
-    align-items: center;
-    padding: 10px;
+
+.delete_button { /* Méthode pas très glorieuse pour séparer les boutons issus de Java
+    et les elements li, pas réussis a les aligner, le button est appended to li*/
+    margin-left:80%;
 }
-  
-li:not(:last-child) {
-    border-bottom: 1px solid #ddd;
-}
-  
-.task_name {
-    flex-grow: 1;
-    margin-right: 10px;
-}
-  
-.done_checkbox {
-    margin-right: 10px;
-}
-  
+
+#delete_done_button,
 .delete_button {
-    margin-left: auto;
+    background-color: orangered;
+    padding:1em;
+    color:white;
 }
-  
-#delete_done_button {
-    display: block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+#save_div,
+#load_save_div {
+    padding:1.5em;
+    border: lightgray 1px solid;
+    margin-top: 1em;
+}
+
+#load_button,
+#save_button {
+    background-color: rgb(88, 88, 88);
+    color:white;
+    border-radius:5%;
+    padding:1em;
 }
