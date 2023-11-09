@@ -1,0 +1,49 @@
+h1 {
+    text-align:center;
+}
+
+#todo_input, #save_input, #saved_lists {
+    padding:1em;
+}
+
+#add_button {
+    padding : 1em;
+    background-color: rgb(43, 177, 43);
+    color:white;
+}
+
+form {
+    border-bottom: lightgray 1px solid;
+    padding:1em;
+}
+
+ul li {
+    list-style: none;
+}
+
+.delete_button { /* Méthode pas très glorieuse pour séparer les boutons issus de Java
+    et les elements li, pas réussis a les aligner, le button est appended to li*/
+    margin-left:80%;
+}
+
+#delete_done_button,
+.delete_button {
+    background-color: orangered;
+    padding:1em;
+    color:white;
+}
+
+#save_div,
+#load_save_div {
+    padding:1.5em;
+    border: lightgray 1px solid;
+    margin-top: 1em;
+}
+
+#load_button,
+#save_button {
+    background-color: rgb(88, 88, 88);
+    color:white;
+    border-radius:5%;
+    padding:1em;
+}

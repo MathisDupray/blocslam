@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./../../assets/css/TD4/todolist.css">
+    <title>to do list</title>
+</head>
+<body>
+	<h1>Todo Liste</h1>
+	<form id="todo_form">
+		<input type="text" id="todo_input" placeholder="Ajouter tâche">
+		<button type="submit" id="add_button">Ajouter</button>
+	</form>
+		<div class="liste">
+	    	<ul id="todo_list"></ul>
+		</div>
+		<button id="delete_done_button">Supprimer tâches effectuées</button>
+		<div id="save_div">
+			<input type="text" id="save_input" placeholder="Nom de la liste .. ?">
+		<button type="button" id="save_button">Sauvegarder</button>
+	</div>
+	<div id="load_save_div">
+		<select id="saved_lists"></select>
+		<button type="button" id="load_button">Charger liste</button>
+	</div>
+</body>
+<script src="./../../js/TD4/todolist.js"></script>
+<script src="https://kit.fontawesome.com/c9930ba331.js" crossorigin="anonymous"></script>
+</html>
